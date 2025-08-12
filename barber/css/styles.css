@@ -1,0 +1,21 @@
+/* Enlace para "saltar al contenido" para usuarios de teclado */
+.skip-link {
+    position: absolute;
+    top: -4rem; /* Oculto fuera de la pantalla por defecto */
+    left: 0;
+    background: #000000;
+    color: white;
+    padding: 0.5rem 1rem;
+    z-index: 9999; /* Asegura que esté por encima de todo */
+    transition: top 0.3s ease-in-out;
+}
+
+.skip-link:focus {
+    top: 0; /* Lo muestra cuando recibe foco */
+}
+
+/* Ajustes para el modo oscuro para mejorar el contraste de las tarjetas */
+[data-bs-theme="dark"] .card {
+    background-color: var(--bs-gray-800);
+    border-color: var(--bs-gray-700);
+}
